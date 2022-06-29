@@ -355,10 +355,10 @@ void inserttotree()
 }
 //---------------------------------------------------------
 
-void Welcome(node* a = proot,int min = 1,int max = 1000000)
+void Welcome(node* a = proot,int min = 1,int max = 10000)
 {
 	FILE *fp;
-	fp=fopen("PRODUCT.txt","rb");
+	fp=fopen("PROEX.INF","rb");
 	if(!fp)
 	{
 		Obj.FILE_BAR_BACKGROUND_COLOR=10;
@@ -547,14 +547,44 @@ void MenuAction(int x)
        }
 }
 
+int valueY = 3;
+int countProduct = 1;
+
+void Data_Inorder(node *a, int min, int max){
+	if(a == NULL || countProduct > 20) return;
+	Data_Inorder(a->left, min, max);
+	if(a->data.price>=min && a->data.price<=max)
+	{
+		gotoxy(1,valueY++);
+		cprintf(" %d. ",countProduct);
+		cprintf("PRODUCT  :  %s ",a->data.name);
+		gotoxy(5,valueY);
+		cprintf("CATEGORY :  %s ",a->data.category);
+		gotoxy(32,valueY++);
+		cprintf("COST : %d Rs ",a->data.price);
+		gotoxy(5,valueY++);
+		cprintf("ADDRESS  :  %s,\n",a->data.landmark);
+		gotoxy(17,valueY++);
+		cprintf("%s,\n",a->data.address);
+		gotoxy(17,valueY++);
+		cprintf("pincode-%d\n",a->data.pincode);
+		gotoxy(5,valueY++);
+		cprintf("PHONE    :  %s",a->data.mobile);
+		gotoxy(1,valueY++);
+		cprintf("-------------------------------------------------------------------------------");
+		countProduct++;
+	}
+	Data_Inorder(a->right, min, max);
+}
+
 void Home_Menu(node *a = proot,int min = 1,int max = 10000)
 {
-   int i=1;
-   int Y = 3;
+  // int i=1;
+  // int Y = 3;
   // node *b = a;
-   ifstream file("ProductData.txt",ios::in);
+   //ifstream file("ProductData.txt",ios::in);
    textattr(0XF0+BLINK);
-   while(a!=NULL && i<=20)
+  /* while(a!=NULL && i<=20)
    {
 	if(a->data.price>=min && a->data.price<=max)
 	{
@@ -578,7 +608,10 @@ void Home_Menu(node *a = proot,int min = 1,int max = 10000)
 		i++;
 	}
 	a = a->right;
-   }
+   } */
+   Data_Inorder(a, min, max);
+   countProduct = 1;
+   valueY = 3;
 }
 void Filter_Menu()
 {
