@@ -6,7 +6,7 @@ A software program to Rent and Sell your products by showing information about i
 
 
 
-![App Screenshot](https://github.com/Aditya-Manapure/Rent2buy/blob/main/Screenshots/Screenshot%20(73).png?raw=true)
+<img src="Screenshots/Screenshot (73).png" width="800px" height="450px" />
 
 
 ## Tech Stack
@@ -20,36 +20,43 @@ A software program to Rent and Sell your products by showing information about i
 
 Product and its owner details are availabe on home page.  
 
-![App Screenshot](https://github.com/Aditya-Manapure/Rent2buy/blob/main/Screenshots/Screenshot%20(83).png?raw=true)
+<img src="Screenshots/Screenshot (83).png" width="800px" height="450px" />
+
 
 
 ## Search
 
 Using search tab we can find availabe products by their names.
 
-![App Screenshot](https://github.com/Aditya-Manapure/Rent2buy/blob/main/Screenshots/Screenshot%20(88).png?raw=true)
+<img src="Screenshots/Screenshot (88).png" width="800px" height="450px" />
 
-![App Screenshot](https://github.com/Aditya-Manapure/Rent2buy/blob/main/Screenshots/Screenshot%20(89).png?raw=true)
+
+<img src="Screenshots/Screenshot (89).png" width="800px" height="450px" />
 
 
 ## Filter
 
 Using filter tab we can filter products by price range.
 
-![App Screenshot](https://github.com/Aditya-Manapure/Rent2buy/blob/main/Screenshots/Screenshot%20(85).png?raw=true)
+<img src="Screenshots/Screenshot (85).png" width="800px" height="450px" />
 
-![App Screenshot](https://github.com/Aditya-Manapure/Rent2buy/blob/main/Screenshots/Screenshot%20(86).png?raw=true)
+<img src="Screenshots/Screenshot (86).png" width="800px" height="450px" />
 
+## Sell (Add Products)
+
+Add your products to Rent and Sell.
+
+<img src="Screenshots/Screenshot (73).png" width="800px" height="450px" />
 
 ## Authentication (Accounts tab)
 
 Login
 
-![App Screenshot](https://github.com/Aditya-Manapure/Rent2buy/blob/main/Screenshots/Screenshot%20(75).png?raw=true)
+<img src="Screenshots/Screenshot (75).png" width="800px" height="450px" />
 
 SignUp
 
-![App Screenshot](https://github.com/Aditya-Manapure/Rent2buy/blob/main/Screenshots/Screenshot%20(90).png?raw=true)
+<img src="Screenshots/Screenshot (90).png" width="800px" height="450px" />
 
 ## Author
 
